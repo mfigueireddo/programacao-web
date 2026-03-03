@@ -1,0 +1,10 @@
+version: "3.7"
+
+services:
+  web: # Service name
+    build: .  # Current directory as root
+    container_name: programacao-web
+    ports:
+      # Host Port : Container Port
+      # Flow ==> User: http://localhost:8080 -> Machine: Port 80 inside the container
+      - "8080:80"
